@@ -16,11 +16,11 @@ var TodoItem = React.createClass({
         return (
             <li className="list-group-item clearfix">
 
-                <span style={ this.props.todo.done ? { textDecoration: 'line-through', color: 'grey'} : { 'font-weight':'bold'} }>{this.props.todo.title}</span>
+                <span style={ this.props.todo.done ? { textDecoration: 'line-through', color: 'grey'} : { 'fontWeight':'bold'} }>{this.props.todo.title}</span>
 
                 <div className="pull-right">
                     <input type="checkbox" checked={ this.props.todo.done } onChange={ this.handleChangeDone }/>
-                    <button type="button" className="btn btn-xs btn-danger img-circle" onClick={ this.handleRemove }>del</button>
+                    <span className="badge" onClick={ this.handleRemove } style={{cursor: 'pointer'}}>del</span>
                 </div>
             </li>
         );

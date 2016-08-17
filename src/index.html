@@ -11,10 +11,58 @@
         
     </head>
     <body>
+        
+        <nav class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <h1>Example todo list with react-simplex</h1>
+            </div>
+          </div>
+        </nav>
+
+
+
         <section class="container">
             <TodoListWidget></TodoListWidget>
         </section>
 
+
+
+
+        <footer class="footer">
+            <div class="container">
+                <p class="text-muted"><a href="https://github.com/bumkaka/react-simplex">react-simplex</a> by ga-alex 2016</p>
+            </div>
+        </footer>
+
         <script src="/js/app.js"></script>
+
+        <style>
+            
+            html {
+              position: relative;
+              min-height: 100%;
+            }
+            body {
+              margin-bottom: 60px;
+            }
+            .footer {
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              height: 60px;
+              background-color: #f5f5f5;
+            }
+
+
+            .container {
+              width: auto;
+              max-width: 1000px;
+              padding: 0 15px;
+            }
+            .container .text-muted {
+              margin: 20px 0;
+            }
+        </style>
     </body>
 </html>
