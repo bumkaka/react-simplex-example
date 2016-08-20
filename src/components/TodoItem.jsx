@@ -14,7 +14,7 @@ var TodoItem = React.createClass({
 
     render: function() {
         return (
-            <li className="list-group-item clearfix">
+            <li className="list-group-item clearfix"  key={ this.props.todo.id } >
 
                 <span style={ this.props.todo.done ? { textDecoration: 'line-through', color: 'grey'} : { 'fontWeight':'bold'} }>{this.props.todo.title}</span>
 

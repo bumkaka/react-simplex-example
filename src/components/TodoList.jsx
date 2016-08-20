@@ -6,13 +6,12 @@ var TodoList = React.createClass({
         if ( !this.props.todos ) return null;
 
 
-        var todos = this.props.todos.map(function ( todo ) {
+        var todos = this.props.todos.map( function ( todo ) {
             return (
-                <TodoItem key={todo.id} todo={todo} />
+                <TodoItem todo={ todo } key={ todo.id}/>
             );
-        },this);
+        });
 
-        
         return (
             <ul className="list-group">
                 {todos}
@@ -20,5 +19,6 @@ var TodoList = React.createClass({
         );
     }
 });
+
 
 export default TodoList;
